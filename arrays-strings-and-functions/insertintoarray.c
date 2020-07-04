@@ -6,7 +6,7 @@
 
 #define max 100
 
-int main() {
+int insertintoarray() {
     int p[max], size, position;
     printf("Enter the length of the array: ");
     scanf("%d", &size);
