@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 
-int main() {
+int matrixmultiplication() {
     /*
      * A prerequisite for multiplying two matrices is that
      * the number of columns in the first matrix must be equal
