@@ -3,8 +3,9 @@
 //
 #include <stdio.h>
 
-int commoninarray()
-{
+int exists(const int arr[], int arraySize, int value);
+
+int differenceinarray() {
     int sizeA, sizeB, sizeR;
 
     printf("Length of list A:\n");
@@ -29,33 +30,31 @@ int commoninarray()
     int listResult[sizeR], indexResult = 0;
 
     for (int i = 0; i < sizeA; ++i) {
-        for (int j = 0; j < sizeB; ++j) {
-            if (listA[i] == listB[j]) {
-
-                int existsInResult = 0;
-                for (int k = 0; k < sizeR; ++k) {
-                    if (listA[i] == listResult[k]) {
-                        existsInResult = 1;
-                        break;
-                    }
-                }
-
-                if (!existsInResult) {
-                    listResult[indexResult] = listA[i];
-                    ++indexResult;
-                }
-            }
+        int value = listA[i];
+        if (!exists(listB, sizeB, value)) {
+            listResult[indexResult] = value;
+            indexResult++;
         }
     }
 
     if (indexResult > 0) {
-        printf("Elements in common:\n");
+        printf("Different elements:\n");
         for (int i = 0; i < indexResult; ++i) {
             printf("%d\n", listResult[i]);
         }
     } else {
-        printf("No elements in common.");
+        printf("No different elements.");
     }
 
+    return 0;
+}
+
+int exists(const int arr[], int arraySize, int value) {
+    if (arraySize > 0) {
+        for (int i = 0; i < arraySize; ++i) {
+            if (arr[i] == value)
+                return 1;
+        }
+    }
     return 0;
 }
