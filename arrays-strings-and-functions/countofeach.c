@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int main(void) {
+int countofeach(void) {
     const int charSize = 80;
     char str[charSize], chr[charSize];
 
