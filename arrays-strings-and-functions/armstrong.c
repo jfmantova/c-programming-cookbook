@@ -13,7 +13,7 @@ int pop();
 
 int isArmstrong(int);
 
-int main(void) {
+int armstrong(void) {
     int number;
     printf("Enter a number:\n");
     scanf("%d", &number);
