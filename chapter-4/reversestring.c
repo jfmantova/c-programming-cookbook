@@ -5,7 +5,7 @@
 
 #include <stdio.h>
 
-void main() {
+void reversestring() {
 
     char str[255], *pointer1, *pointer2, temp;
     int length, position;
