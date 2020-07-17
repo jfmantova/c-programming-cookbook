@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 
-void main() {
+void largestinarray() {
     int numbers[255], length;
     printf("How many elements?\n");
     scanf("%d", &length);
