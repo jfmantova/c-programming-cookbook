@@ -10,7 +10,7 @@ struct Cart {
     char password[30];
 };
 
-void main() {
+void pointertostruct() {
     struct Cart myCart, *pointer1, *pointer2;
     printf("%lu bytes\n", sizeof(myCart.emailAddress));
     pointer1 = &myCart;
