@@ -5,7 +5,7 @@
 
 int gcd(int x, int y);
 
-void main() {
+void maingcd() {
     int x, y, result;
     printf("Enter two numbers: ");
     scanf("%d %d", &x, &y);
