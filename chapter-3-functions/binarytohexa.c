@@ -18,7 +18,7 @@ void intohexa(int, int);
 char prnhexa(int);
 
 
-void main(void)
+void binarytohexa(void)
 {
     int binary, decimal;
     printf("Enter a number in binary number:\n");
